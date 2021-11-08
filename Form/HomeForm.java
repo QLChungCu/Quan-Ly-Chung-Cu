@@ -10,6 +10,7 @@ import smartcity.methodForm.Search.SearchResidents;
 import smartcity.methodForm.Search.SearchAdmin;
 import smartcity.methodForm.Search.SearchApartment;
 import smartcity.methodForm.Search.SearchVehicle;
+import smartcity.methodForm.Add.*;
 
 
 
@@ -193,6 +194,11 @@ public class HomeForm extends javax.swing.JFrame {
 
         btnAdd.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnAdd.setText("Thêm");
+        btnAdd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddActionPerformed(evt);
+            }
+        });
 
         btnMend.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnMend.setText("Sửa");
@@ -1096,6 +1102,22 @@ public class HomeForm extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnChangePasswordActionPerformed
 
+    private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+        // TODO add your handling code here:
+        if(ResidentsPanel.isVisible()){
+            new AddResident().setVisible(true);
+        }
+        else if(ApartmentsPanel.isVisible()){
+            new AddApartment().setVisible(true);
+        }
+        else if(VehiclesPanel.isVisible()){
+            new AddVehicle().setVisible(true);
+        }
+        else if(AdminsPanel.isVisible()){
+            new AddAdmin().setVisible(true);
+        }
+    }//GEN-LAST:event_btnAddActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1121,38 +1143,6 @@ public class HomeForm extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(HomeForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
