@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package smartcity.methodForm.Modify;
+package smartcity.methodForm.Delete;
 
+import smartcity.methodForm.Modify.*;
 import smartcity.methodForm.Add.*;
 import javax.swing.JOptionPane;
 
@@ -12,12 +13,12 @@ import javax.swing.JOptionPane;
  *
  * @author datd6
  */
-public class ModifyResident extends javax.swing.JFrame {
+public class DeleteResident extends javax.swing.JFrame {
 
     /**
      * Creates new form SearchResidents
      */
-    public ModifyResident() {
+    public DeleteResident() {
         initComponents();
         this.setLocation(800, 100);
     }
@@ -47,7 +48,7 @@ public class ModifyResident extends javax.swing.JFrame {
         txtID = new javax.swing.JTextField();
         txtIC = new javax.swing.JTextField();
         txtApNumber = new javax.swing.JTextField();
-        btnModify = new javax.swing.JButton();
+        btnDelete = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         cbGender = new javax.swing.JComboBox<>();
         jLabel8 = new javax.swing.JLabel();
@@ -105,11 +106,11 @@ public class ModifyResident extends javax.swing.JFrame {
 
         txtApNumber.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
 
-        btnModify.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnModify.setText("Sửa");
-        btnModify.addActionListener(new java.awt.event.ActionListener() {
+        btnDelete.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnDelete.setText("Xóa cư dân");
+        btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnModifyActionPerformed(evt);
+                btnDeleteActionPerformed(evt);
             }
         });
 
@@ -193,8 +194,8 @@ public class ModifyResident extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(cbYofBegin, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnModify, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(63, 63, 63))
+                .addComponent(btnDelete)
+                .addGap(53, 53, 53))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -231,7 +232,7 @@ public class ModifyResident extends javax.swing.JFrame {
                                     .addComponent(txtPhoneNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(31, 31, 31)
-                                .addComponent(btnModify, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(54, 54, 54))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
@@ -320,12 +321,12 @@ public class ModifyResident extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnModifyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModifyActionPerformed
+    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
         // TODO add your handling code here:
         JOptionPane.showMessageDialog(this, "Đã sửa thành công", "Thành công",
                 JOptionPane.OK_OPTION);
         this.setVisible(false);
-    }//GEN-LAST:event_btnModifyActionPerformed
+    }//GEN-LAST:event_btnDeleteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -344,14 +345,18 @@ public class ModifyResident extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ModifyResident.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DeleteResident.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ModifyResident.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DeleteResident.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ModifyResident.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DeleteResident.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ModifyResident.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DeleteResident.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -360,14 +365,14 @@ public class ModifyResident extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ModifyResident().setVisible(true);
+                new DeleteResident().setVisible(true);
             }
         });
     }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnModify;
+    private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnSearch;
     private javax.swing.JComboBox<String> cbDofBegin;
     private javax.swing.JComboBox<String> cbDofBirth;

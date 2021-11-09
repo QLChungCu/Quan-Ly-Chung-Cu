@@ -11,6 +11,8 @@ import smartcity.methodForm.Search.SearchAdmin;
 import smartcity.methodForm.Search.SearchApartment;
 import smartcity.methodForm.Search.SearchVehicle;
 import smartcity.methodForm.Add.*;
+import smartcity.methodForm.Modify.*;
+import smartcity.methodForm.Delete.*;
 
 
 
@@ -44,7 +46,7 @@ public class HomeForm extends javax.swing.JFrame {
         btnAdd.hide();
         btnDelete.hide();
         btnSearch.hide();
-        btnMend.hide();
+        btnModify.hide();
         //ngan chinh sua o InforUserPanel
         txtLastName.disable();
         txtFirstName.disable();
@@ -84,7 +86,7 @@ public class HomeForm extends javax.swing.JFrame {
         txtTotalApartments = new javax.swing.JLabel();
         txtTotalVehicles = new javax.swing.JLabel();
         btnAdd = new javax.swing.JButton();
-        btnMend = new javax.swing.JButton();
+        btnModify = new javax.swing.JButton();
         btnDelete = new javax.swing.JButton();
         btnSearch = new javax.swing.JButton();
         ResidentsPanel = new javax.swing.JPanel();
@@ -200,16 +202,21 @@ public class HomeForm extends javax.swing.JFrame {
             }
         });
 
-        btnMend.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnMend.setText("Sửa");
-        btnMend.addActionListener(new java.awt.event.ActionListener() {
+        btnModify.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnModify.setText("Sửa");
+        btnModify.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnMendActionPerformed(evt);
+                btnModifyActionPerformed(evt);
             }
         });
 
         btnDelete.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnDelete.setText("Xóa");
+        btnDelete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDeleteActionPerformed(evt);
+            }
+        });
 
         btnSearch.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnSearch.setText("Tìm kiếm");
@@ -660,7 +667,7 @@ public class HomeForm extends javax.swing.JFrame {
 
         jLayeredPane1.setLayer(HomePanel, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(btnAdd, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(btnMend, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(btnModify, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(btnDelete, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(btnSearch, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(ResidentsPanel, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -681,7 +688,7 @@ public class HomeForm extends javax.swing.JFrame {
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnMend, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnModify, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(48, 48, 48))
             .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -719,7 +726,7 @@ public class HomeForm extends javax.swing.JFrame {
                 .addGap(70, 70, 70)
                 .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(54, 54, 54)
-                .addComponent(btnMend, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnModify, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(55, 55, 55)
                 .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(51, 51, 51)
@@ -887,7 +894,7 @@ public class HomeForm extends javax.swing.JFrame {
         btnAdd.show();
         btnDelete.show();
         btnSearch.show();
-        btnMend.show();
+        btnModify.show();
     }//GEN-LAST:event_btnResedentsActionPerformed
 
     private void btnUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUserActionPerformed
@@ -916,7 +923,7 @@ public class HomeForm extends javax.swing.JFrame {
             btnAdd.hide();
             btnDelete.hide();
             btnSearch.hide();
-            btnMend.hide();
+            btnModify.hide();
         }
         else if(select.equals("Tài khoản")){
             HomePanel.setVisible(false);
@@ -929,7 +936,7 @@ public class HomeForm extends javax.swing.JFrame {
             btnAdd.hide();
             btnDelete.hide();
             btnSearch.hide();
-            btnMend.hide();
+            btnModify.hide();
         }
         
     }//GEN-LAST:event_btnUserActionPerformed
@@ -955,7 +962,7 @@ public class HomeForm extends javax.swing.JFrame {
         btnAdd.hide();
         btnDelete.hide();
         btnSearch.hide();
-        btnMend.hide();
+        btnModify.hide();
     }//GEN-LAST:event_btnHomeActionPerformed
 
     private void btnVehicleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVehicleActionPerformed
@@ -979,7 +986,7 @@ public class HomeForm extends javax.swing.JFrame {
         btnAdd.show();
         btnDelete.show();
         btnSearch.show();
-        btnMend.show();
+        btnModify.show();
     }//GEN-LAST:event_btnVehicleActionPerformed
 
     private void btnAdminsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdminsActionPerformed
@@ -1003,7 +1010,7 @@ public class HomeForm extends javax.swing.JFrame {
         btnAdd.show();
         btnDelete.show();
         btnSearch.show();
-        btnMend.show();
+        btnModify.show();
     }//GEN-LAST:event_btnAdminsActionPerformed
 
     private void btnApartmentsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApartmentsActionPerformed
@@ -1027,12 +1034,24 @@ public class HomeForm extends javax.swing.JFrame {
         btnAdd.show();
         btnDelete.show();
         btnSearch.show();
-        btnMend.show();
+        btnModify.show();
     }//GEN-LAST:event_btnApartmentsActionPerformed
 
-    private void btnMendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMendActionPerformed
+    private void btnModifyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModifyActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnMendActionPerformed
+        if(ResidentsPanel.isVisible()){
+            new ModifyResident().setVisible(true);
+        }
+        else if(ApartmentsPanel.isVisible()){
+            new ModifyApartment().setVisible(true);
+        }
+        else if(VehiclesPanel.isVisible()){
+            new ModifyVehicle().setVisible(true);
+        }
+        else if(AdminsPanel.isVisible()){
+            new ModifyAdmin().setVisible(true);
+        }
+    }//GEN-LAST:event_btnModifyActionPerformed
 
     private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
         // TODO add your handling code here:
@@ -1118,6 +1137,22 @@ public class HomeForm extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnAddActionPerformed
 
+    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+        // TODO add your handling code here:
+        if(ResidentsPanel.isVisible()){
+            new DeleteResident().setVisible(true);
+        }
+        else if(ApartmentsPanel.isVisible()){
+            new DeleteApartment().setVisible(true);
+        }
+        else if(VehiclesPanel.isVisible()){
+            new DeleteVehicle().setVisible(true);
+        }
+        else if(AdminsPanel.isVisible()){
+            new DeleteAdmin().setVisible(true);
+        }
+    }//GEN-LAST:event_btnDeleteActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1166,8 +1201,8 @@ public class HomeForm extends javax.swing.JFrame {
     private javax.swing.JButton btnChangePassword;
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnHome;
-    private javax.swing.JButton btnMend;
     private javax.swing.JButton btnMendInfor;
+    private javax.swing.JButton btnModify;
     private javax.swing.JButton btnResedents;
     private javax.swing.JButton btnSearch;
     private javax.swing.JComboBox<String> btnUser;

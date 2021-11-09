@@ -94,7 +94,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="btnSearch" min="-2" pref="120" max="-2" attributes="0"/>
                           <Component id="btnDelete" min="-2" pref="120" max="-2" attributes="0"/>
-                          <Component id="btnMend" min="-2" pref="120" max="-2" attributes="0"/>
+                          <Component id="btnModify" min="-2" pref="120" max="-2" attributes="0"/>
                           <Component id="btnAdd" min="-2" pref="120" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
@@ -147,7 +147,7 @@
                       <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
                       <Component id="btnAdd" min="-2" pref="35" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
-                      <Component id="btnMend" min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="btnModify" min="-2" pref="35" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="btnDelete" min="-2" pref="35" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
@@ -291,7 +291,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="btnMend">
+            <Component class="javax.swing.JButton" name="btnModify">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="18" style="0"/>
@@ -299,7 +299,7 @@
                 <Property name="text" type="java.lang.String" value="S&#x1eed;a"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMendActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnModifyActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="btnDelete">
@@ -309,6 +309,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="X&#xf3;a"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeleteActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="btnSearch">
               <Properties>
