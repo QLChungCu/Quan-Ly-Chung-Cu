@@ -6,10 +6,7 @@
 package smartcity.Form;
 
 import java.awt.Color;
-import smartcity.methodForm.Search.SearchResidents;
-import smartcity.methodForm.Search.SearchAdmin;
-import smartcity.methodForm.Search.SearchApartment;
-import smartcity.methodForm.Search.SearchVehicle;
+import smartcity.methodForm.Search.*;
 import smartcity.methodForm.Add.*;
 import smartcity.methodForm.Modify.*;
 import smartcity.methodForm.Delete.*;
@@ -21,7 +18,7 @@ import smartcity.methodForm.Delete.*;
  * @author datd6
  */
 public class HomeForm extends javax.swing.JFrame {
-
+public static final Color VERY_LIGHT_YELLOW = new Color(255,255,180);
     /**
      * Creates new form HomeForm
      */
@@ -31,7 +28,7 @@ public class HomeForm extends javax.swing.JFrame {
         btnAdmins.setBackground(Color.LIGHT_GRAY);
         btnApartments.setBackground(Color.LIGHT_GRAY);
         btnResedents.setBackground(Color.LIGHT_GRAY);
-        btnHome.setBackground(Color.GREEN);
+        btnHome.setBackground(VERY_LIGHT_YELLOW);
         btnVehicle.setBackground(Color.LIGHT_GRAY);
         btnUser.setBackground(Color.LIGHT_GRAY);
         //set Panel
@@ -879,7 +876,7 @@ public class HomeForm extends javax.swing.JFrame {
         //set button color 
         btnAdmins.setBackground(Color.LIGHT_GRAY);
         btnApartments.setBackground(Color.LIGHT_GRAY);
-        btnResedents.setBackground(Color.GREEN);
+        btnResedents.setBackground(VERY_LIGHT_YELLOW);
         btnHome.setBackground(Color.LIGHT_GRAY);
         btnVehicle.setBackground(Color.LIGHT_GRAY);
         btnUser.setBackground(Color.LIGHT_GRAY);
@@ -905,7 +902,7 @@ public class HomeForm extends javax.swing.JFrame {
         btnResedents.setBackground(Color.LIGHT_GRAY);
         btnHome.setBackground(Color.LIGHT_GRAY);
         btnVehicle.setBackground(Color.LIGHT_GRAY);
-        btnUser.setBackground(Color.GREEN);
+        btnUser.setBackground(VERY_LIGHT_YELLOW);
         //select method
         String select=(String)btnUser.getSelectedItem();
         if(select.equals("Đăng xuất")){
@@ -947,7 +944,7 @@ public class HomeForm extends javax.swing.JFrame {
         btnAdmins.setBackground(Color.LIGHT_GRAY);
         btnApartments.setBackground(Color.LIGHT_GRAY);
         btnResedents.setBackground(Color.LIGHT_GRAY);
-        btnHome.setBackground(Color.GREEN);
+        btnHome.setBackground(VERY_LIGHT_YELLOW);
         btnVehicle.setBackground(Color.LIGHT_GRAY);
         btnUser.setBackground(Color.LIGHT_GRAY);
         //set Panel
@@ -972,7 +969,7 @@ public class HomeForm extends javax.swing.JFrame {
         btnApartments.setBackground(Color.LIGHT_GRAY);
         btnResedents.setBackground(Color.LIGHT_GRAY);
         btnHome.setBackground(Color.LIGHT_GRAY);
-        btnVehicle.setBackground(Color.GREEN);
+        btnVehicle.setBackground(VERY_LIGHT_YELLOW);
         btnUser.setBackground(Color.LIGHT_GRAY);
         //set Panel
         HomePanel.setVisible(false);
@@ -992,7 +989,7 @@ public class HomeForm extends javax.swing.JFrame {
     private void btnAdminsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdminsActionPerformed
         // TODO add your handling code here:
         //set button color 
-        btnAdmins.setBackground(Color.green);
+        btnAdmins.setBackground(VERY_LIGHT_YELLOW);
         btnApartments.setBackground(Color.LIGHT_GRAY);
         btnResedents.setBackground(Color.LIGHT_GRAY);
         btnHome.setBackground(Color.LIGHT_GRAY);
@@ -1017,7 +1014,7 @@ public class HomeForm extends javax.swing.JFrame {
         // TODO add your handling code here:
         //set button color 
         btnAdmins.setBackground(Color.LIGHT_GRAY);
-        btnApartments.setBackground(Color.green);
+        btnApartments.setBackground(VERY_LIGHT_YELLOW);
         btnResedents.setBackground(Color.LIGHT_GRAY);
         btnHome.setBackground(Color.LIGHT_GRAY);
         btnVehicle.setBackground(Color.LIGHT_GRAY);
